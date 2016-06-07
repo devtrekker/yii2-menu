@@ -1,7 +1,7 @@
 Bootstrap Menu Manager for Yii2
 ================================
 
-[![Latest Stable Version](https://poser.pugx.org/pceuropa/yii2-menu/v/stable)](https://packagist.org/packages/pceuropa/yii2-menu) [![Total Downloads](https://poser.pugx.org/devtrekker/yii2-menu/downloads)](https://packagist.org/packages/devtrekker/yii2-menu) [![Latest Unstable Version](https://poser.pugx.org/devtrekker/yii2-menu/v/unstable)](https://packagist.org/packages/devtrekker/yii2-menu) [![License](https://poser.pugx.org/pceuropa/yii2-menu/license)](https://packagist.org/packages/pceuropa/yii2-menu)
+[![Latest Stable Version](https://poser.pugx.org/pceuropa/yii2-menu/v/stable)](https://packagist.org/packages/pceuropa/yii2-menu) [![Total Downloads](https://poser.pugx.org/pceuropa/yii2-menu/downloads)](https://packagist.org/packages/pceuropa/yii2-menu) [![Latest Unstable Version](https://poser.pugx.org/pceuropa/yii2-menu/v/unstable)](https://packagist.org/packages/pceuropa/yii2-menu) [![License](https://poser.pugx.org/pceuropa/yii2-menu/license)](https://packagist.org/packages/pceuropa/yii2-menu)
 ![preview](http://pceuropa.net/imgs/yii2-menu2.png)
 
 [DEMO](http://yii2-menu.pceuropa.net/menu)
