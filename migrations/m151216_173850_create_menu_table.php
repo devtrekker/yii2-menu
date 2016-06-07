@@ -7,12 +7,12 @@ class m151216_173850_create_menu_table extends Migration
 {
     public function up()
     {
-		$this->createTable('menu', [
+        $this->createTable('menu', [
             'menu_id' => $this->primaryKey(),
             'name' => $this->string(255)->notNull(),
             'url' => $this->string(255)->notNull(),
-			'gr' => $this->integer(2)->defaultValue(0)->notNull(),
-			'serialize' => $this->integer()->defaultValue(100),
+            'gr' => $this->integer(2)->defaultValue(0)->notNull(),
+            'serialize' => $this->integer()->defaultValue(100),
             
         ], 'ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci AUTO_INCREMENT=2');
     }
