@@ -21,10 +21,11 @@ composer require devtrekker/yii2-menu dev-master
 Add the following code to config file Yii2
 ```php
 'modules' => [
-	'menu' => [
-            'class' => '\devtrekker\menu\Module',
-        ],
-	]
+    //...
+    'menu' => [
+        'class' => '\devtrekker\menu\Module',
+    ],
+]
 ```
 
 ## Configuration
@@ -48,12 +49,12 @@ $menu = new devtrekker\menu\Module([]);
 NavBar::begin(['brandLabel' => 'Brand','brandUrl' => Url::home(),]);
 
 echo Nav::widget([ 'options' => ['class' => 'navbar-nav navbar-left'],
-					'items' => $menu->NavbarLeft() 
-				]);	
+    'items' => $menu->NavbarLeft() 
+]);	
 					
 echo Nav::widget([ 'options' => ['class' => 'navbar-nav navbar-right'],
-					'items' => $menu->NavbarRight()
-				]);
+    'items' => $menu->NavbarRight()
+]);
 NavBar::end();
 
 ```
@@ -76,7 +77,7 @@ NavBar::begin([
 ]);
 $menuItems = [
     ['label' => 'Home', 'url' => ['/site/index']],
-    ...
+    //...
 ];    
                 
 // Merge available menu entries into a single menu
@@ -106,7 +107,7 @@ You need to create a second database (eg. menu_fr), and add references to it. Fi
 ```php
 public static function tableName() 
 { 
-	return 'menu'; 
+    return 'menu'; 
 }
 ```
 and change for it
@@ -114,11 +115,11 @@ and change for it
 ```php
 public static function tableName() 
 { 
-	if Yii:$app->language == "en" {
-		return 'menu'; 
-	} else {
-	 	return "menu_fr"
-	}
+    if Yii:$app->language == "en" {
+        return 'menu'; 
+    } else {
+        return "menu_fr"
+    }
 }
 ```
 Author: [@Marguzewicz](https://twitter.com/Marguzewicz) | [Donation](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=patriota%40or7%2eeu&lc=PL&item_name=Rafal%20Marguzewicz&no_note=1&no_shipping=1&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted)
